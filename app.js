@@ -7,11 +7,7 @@ const API_KEY = "AIzaSyCfVy2IWyKG93bkZsRIzkW5u1fs4bUeJSg";
 
 // يجرب كل موديل تلقائياً حتى يلاقي واحد شغال
 const MODELS = [
-  "gemini-2.0-flash-exp",
-  "gemini-2.0-flash",
-  "gemini-1.5-flash",
-  "gemini-1.5-flash-latest",
-  "gemini-pro",
+  "gemini-1.5-flash"
 ];
 
 const SYSTEM_PROMPT = `أنت "AI Edit Director" — مخرج إيدتات محترف وناقد فيديو متخصص. مهمتك تحليل أي فيديو أو صورة بدقة شديدة وإعطاء فيدباك احترافي وصريح بالعربية.
