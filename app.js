@@ -52,8 +52,7 @@ async function callGemini(parts) {
   let lastError = '';
   for (const model of MODELS) {
     try {
-      const url = `https://generativelanguage.googleapis.com/v1/models/gemini-1.5-flash:generateContent?key=`;
-      const res = await fetch(url, {
+            const url = `https://generativelanguage.googleapis.com/v1/models/${model}:generateContent?key=${API_KEY}`;
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
